@@ -53,10 +53,12 @@ $(document).ready(function () {
 
                         var topicImage = $("<img>").addClass("gif").attr({"src": still, "data-still": still, "data-animate": animate, "data-state": "still"});
 
-                        topicDiv.append(topicImage).append(rating);
+                        topicDiv.append(topicImage);
+                        topicDiv.append(p);
 
                         $("#gifs-display").prepend(topicDiv);
                         console.log(topicDiv);
+
                     }
                 });
             }
@@ -78,11 +80,19 @@ $(document).ready(function () {
             
               $(document).on("click", ".gif", changeAnimate);
             
-              $("#add-search").on("click", function(event) {
+              $("#add-topic").on("click", function(event) {
                 event.preventDefault();
-            });  
+
+                var topic= $("#topic-input").val().trim();
+                $("#topic-input").val("");
+                topics.push(topic);
+                showButtons();
+              
+
+            
+            }); 
               
 
     showButtons();
-    showGifs();
+    
 });
