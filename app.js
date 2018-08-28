@@ -23,7 +23,7 @@ $(document).ready(function () {
             var topic = $(this).attr("data-topic");
 
             //for Giphy Query
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q="
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q="
                 + topic + "&rating=pg&api_key=6CjfUAofGjvsi1tn9tiW0Cw4hixSKLFC&limit=10";
                 
 
