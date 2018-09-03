@@ -9,7 +9,7 @@ $(document).ready(function () {
         $("#topics-display").empty();
 
         for (var i = 0; i < topics.length; i++) {
-            var newButton = $("<button>").text(topics[i]).attr("data-topic", topics[i]).addClass("topic-button");
+            var newButton = $("<button class='btn btn-outline-warning'>").text(topics[i]).attr("data-topic", topics[i]).addClass("topic-button");
             $("#topics-display").append(newButton);
             console.log("ha")
         }

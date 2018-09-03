@@ -2,49 +2,70 @@
 
 <html lang="en">
 
-    <head>
+<head>
+    <!--add css-->
+    <link rel="stylesheet" href="/assets/reset.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-        <title>GifTASTIC</title>
+    
+    <title>GifTASTIC</title>
 
-    </head>
+</head>
 
-    <body>
-        <div class="header">
-            <h1>FOOD TIME</h1>
+<body>
+
+    <!--TITLE BOX-->
+
+    <div class="jumbotron" style="background: url(assets/images/foodt.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <div class="row">
+            <div class="col-lg">
+                <h1 class="display-2 text-center bg-white">FOOD TIME</h1>
+                <p class="instructions text-center bg-white">Click food below or feed yourself something new to see Gifs!</p>
+            </div>
         </div>
-    
+    </div>
+
+    <!--FORMAT COLUMNS-->
     <div class="container">
+        <div class="col-sm">
 
-        <form id="topics-form">
-            <label for="search">FEED ME MORE:</label>
-            <input type="text" id="topic-input"><br>
-        
+            <!--TOPICS DISPLAY/ need to change bkgrnd color-->
+            <div class="card">
+                <div class="topicsdisplay">
+                    <button type="button" id="topics-display"></button>
+                </div>
+            </div>
+        </div><br>
+
+            <!--SEARCH INPUT BOX-->
+        <div class="col-sm">  
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="FEED ME MORE..." aria-label="search" aria-describedby="basic-addon2"
+                    id="topic-input">
+                <div class="input-group-append">
+                    <input class="btn btn-outline-danger" type="submit" value="YUM" id="add-topic"></button>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <!--GIFS DISPLAY HERE-->
+        <div class="col-sm">
             
-            <input id="add-topic" type="submit" value="submit">
-        </form>
-    
-
-
-        <div id="topics-display"></div>
-
-        <div id="gifs-display"></div>
-
-      
-
-        
+            <div class="gifs text-center" id="gifs-display"></div>
+        </div>
+    </div>
 
     </div>
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src= "app.js"></script>
-
-
-    </body>
+</body>
 
 
 </html>
