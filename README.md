@@ -3,6 +3,8 @@
 ## Overview
 First API based project using Giphy
 
+- - -
+
 ## Guidelines/ Requirements:
 
 When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
@@ -19,6 +21,7 @@ Deploy your assignment to Github Pages.
 
 Rejoice! You just made something really cool.
 
+- - -
 
 ### Technologies Used
 * AJAX
